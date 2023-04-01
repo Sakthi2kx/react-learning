@@ -1,4 +1,4 @@
-import "./App.css";
+import Alert from "./components/Alert";
 import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         heading={"Cities"}
         onSelectItem={handleSelectedItem}
       />
+      <Alert>Hello <span>World</span></Alert>
     </div>
   );
 }
