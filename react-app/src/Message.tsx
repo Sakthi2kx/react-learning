@@ -31,7 +31,7 @@ const Message = () => {
     //update an element from an array
     setTags(tags.map((tag) => (tag === "happy" ? "happiness" : tag)));
 
-    setBugs(bugs.map((bug) => bug.id === 1 ? {...bug, fixed: true} : bug))
+    setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
   };
 
   return (
