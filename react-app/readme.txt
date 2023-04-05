@@ -18,3 +18,6 @@ it helps in skiping the re-rendering of components
 To achieve this keep changes out of the render phase
 
 state objects are immutable
+
+use the state hook only for values that change over time and their change 
+require re-rendering our component
