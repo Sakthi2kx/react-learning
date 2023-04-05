@@ -3,6 +3,7 @@ import Alert from "./components/Alert";
 import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
 
 function App() {
   const items = ["New York", "Mumbai", "London", "Tokyo", "Paris"];
@@ -15,7 +16,7 @@ function App() {
   };
   return (
     <div>
-      <ListGroup
+      {/* <ListGroup
         items={items}
         heading={"Cities"}
         onSelectItem={handleSelectedItem}
@@ -27,7 +28,7 @@ function App() {
       )}
       <Button color="secondary" onClick={() => setAlertVisibility(true)}>
         My Button
-      </Button>
+      </Button> */}
 
       {/* <Message/> */}
 
@@ -35,7 +36,7 @@ function App() {
       {/* <NavBar cartItemsCount={cartItems.length}/>
       <Cart cartItems={cartItems} onClear={() => setCartItems([])}/> */}
 
-      <ExpandableText maxChars={50}>
+      {/* <ExpandableText maxChars={50}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
         necessitatibus totam quaerat dolore nemo ab officia, labore itaque
         consequuntur cumque id placeat illum laboriosam repellendus culpa vel.
@@ -48,7 +49,9 @@ function App() {
         perferendis voluptate sequi eaque quod, voluptatibus hic eligendi.
         Deleniti cumque culpa reiciendis id commodi est minima qui vitae
         possimus sit?
-      </ExpandableText>
+      </ExpandableText> */}
+
+      <Form/>
     </div>
   );
 }
