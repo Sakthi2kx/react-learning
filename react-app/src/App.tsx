@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 import ExpandableText from "./components/ExpandableText";
 import Form from "./components/Form";
+import FormZod from "./components/FormZod";
 
 function App() {
   const items = ["New York", "Mumbai", "London", "Tokyo", "Paris"];
@@ -51,7 +52,7 @@ function App() {
         possimus sit?
       </ExpandableText> */}
 
-      <Form/>
+      <FormZod/>
     </div>
   );
 }
