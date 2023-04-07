@@ -1,22 +1,14 @@
-import { useState } from "react";
-import ProductList from "./components/ProductList";
+import { useEffect } from "react";
+
+const connect = () => console.log("connecting to chat server");
+const disconnect = () => console.log("Disconnecting from the chat server");
 
 function App() {
-  const [category, setCategory] = useState("");
-
-  return (
-    <>
-      <select
-        className="form-select"
-        onChange={(event) => setCategory(event.target.value)}
-      >
-        <option value=""></option>
-        <option value="Clothing">Clothing</option>
-        <option value="HouseHold">HouseHold</option>
-      </select>
-      <ProductList category={category}/>
-    </>
-  );
+  useEffect(() => {
+    connect();
+    return () => disconnect(); // clean up function
+  })
+  return <></>;
 }
 
 export default App;
